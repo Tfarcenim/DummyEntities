@@ -43,6 +43,13 @@ jar.manifest.attributes(
 
 repositories {
     maven { url = 'https://repo.spongepowered.org/maven' }
+    maven {
+        name = "CurseForge Maven" //Base
+        url = "https://www.cursemaven.com"
+ //       content {
+  //          includeGroup "curse.maven"
+  //      }
+    }
 }
 
 dependencies {
@@ -56,7 +63,11 @@ dependencies {
     // at runtime, use the full JEI jar
     //runtime "mezz.jei:jei_${mc_version}:${jei_version}"
     //deobfCompile "curse.maven:pams-harvestcraft:2904825"
+    deobfCompile("curse.maven:GeckoLib-388172:4020277") {
+        transitive = false
+    }
 
+    deobfCompile("curse.maven:metamorph-256932:4044182")
     // real examples
     //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
     //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
