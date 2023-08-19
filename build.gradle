@@ -68,6 +68,8 @@ dependencies {
     }
 
     deobfCompile("curse.maven:metamorph-256932:4044182")
+
+    deobfCompile("curse.maven:mchorses-mclib-304750:4528668")
     // real examples
     //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
     //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
