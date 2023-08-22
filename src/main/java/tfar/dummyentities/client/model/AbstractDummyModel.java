@@ -4,7 +4,6 @@ import net.minecraft.util.ResourceLocation;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 import tfar.dummyentities.DummyEntities;
 import tfar.dummyentities.entity.DummyEntity;
-import tfar.dummyentities.entity.RedDummyEntity;
 
 public class AbstractDummyModel<T extends DummyEntity> extends AnimatedGeoModel<T> {
     private final String prefix;

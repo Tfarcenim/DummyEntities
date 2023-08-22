@@ -23,5 +23,4 @@ public class DummyEntitiesClient {
         RenderingRegistry.registerEntityRenderingHandler(GreenDummyEntity.class, GreenEntityRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(BlueDummyEntity.class, BlueEntityRenderer::new);
     }
-
 }
